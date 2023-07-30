@@ -1,1 +1,171 @@
-## Card
+# Cards
+
+## Project Setup
+
+To get started with the "Cards" project, follow these steps:
+
+1. Create a new folder on your computer to store the project files. You can name it "Cards" or any other preferred name.
+
+2. Inside the "Cards" folder, create two new files: `index.html` and `style.scss`. You can use a simple text editor or a code editor like Visual Studio Code to create these files.
+
+## Linking CSS and jQuery
+
+1. Open the `index.html` file in your text editor.
+
+2. Copy and paste the following code into the `index.html` file to set up the basic HTML structure and link the necessary CSS and jQuery files:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards Project</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Card elements will be added here -->
+</body>
+</html>
+```
+
+## Creating SCSS Styles
+
+1. Open the `style.scss` file in your text editor.
+
+2. Copy and paste the following SCSS code into the `style.scss` file. This code will define the styles for the "Cards" project:
+
+```scss
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .3s;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.all-father {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-parent {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-container {
+    min-width: 400px;
+    max-width: 600px;
+    width: 45%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 5px rgb(235, 235, 235);
+    border-radius: 20px;
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    padding: 20px 0;
+    font-weight: lighter;
+    color: grey;
+}
+
+h3 {
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 2px solid aliceblue;
+}
+
+a::first-letter {
+    text-transform: uppercase;
+}
+
+a:hover {
+    border: 2px solid blue;
+}
+
+.card:hover img {
+    border: 2px solid blue;
+}
+```
+
+## Step 4: Adding Card Elements
+
+1. Go back to the `index.html` file.
+
+2. Inside the `<body>` tag, add the following code to create a set of card elements. You can duplicate this code block to add more cards if needed:
+
+```html
+<div class="all-father">
+    <div class="cards-parent">
+        <!-- Card 1 -->
+        <div class="card-container">
+            <div class="card">
+                <img src="img/omega profile.jpg" alt="">
+                <h1>title</h1>
+                <h3>front-end developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+                <a href="http://" target="_blank" rel="noopener noreferrer">know more</a>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <!-- Card 3 -->
+        <!-- Add more cards here -->
+    </div>
+</div>
+```
+
+## Compiling SCSS to CSS
+
+To use the SCSS styles in your project, you need to compile the `style.scss` file into a regular CSS file. If you don't have a build process set up, you can use online tools or install a package like `node-sass` to compile SCSS to CSS.
+
+## Step 6: Viewing the Project
+
+1. Save all the changes made to the `index.html` and `style.scss` files.
+
+2. Open the `index.html` file in your web browser to view the "Cards" project.
+
+Congratulations! You have successfully set up the "Cards" project and created a responsive grid of card elements.
