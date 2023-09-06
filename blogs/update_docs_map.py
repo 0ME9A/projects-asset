@@ -1,6 +1,7 @@
 import os
 import json
 from datetime import datetime
+import subprocess
 
 def update_docs_map(docs_dir, docs_map_file):
     docs_map = []
@@ -14,13 +15,12 @@ def update_docs_map(docs_dir, docs_map_file):
                 continue
             name = os.path.splitext(file)[0]
             path = os.path.join(root, file)
-            stat = os.stat(path)
-            date = stat.st_ctime
-            updated_at = stat.st_mtime
+            date = subprocess.check_output(['git', 'log', '--diff-filter=A', '--format=%aI', '-1', '--', path]).decode().strip()
+            updated_at = subprocess.check_output(['git', 'log', '--diff-filter=M', '--format=%aI', '-1', '--', path]).decode().strip()
             sub.append({
                 'name': name,
-                'date': datetime.fromtimestamp(date).strftime('%Y-%m-%d %H:%M:%S'),
-                'updated-at': datetime.fromtimestamp(updated_at).strftime('%Y-%m-%d %H:%M:%S')
+                'date': datetime.fromisoformat(date).strftime('%Y-%m-%d %H:%M:%S'),
+                'updated-at': datetime.fromisoformat(updated_at).strftime('%Y-%m-%d %H:%M:%S')
             })
         if not sub:
             continue
