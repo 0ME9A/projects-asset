@@ -14,8 +14,9 @@ def update_docs_map(docs_dir, docs_map_file):
                 continue
             name = os.path.splitext(file)[0]
             path = os.path.join(root, file)
-            date = os.path.getctime(path)
-            updated_at = os.path.getmtime(path)
+            stat = os.stat(path)
+            date = stat.st_ctime
+            updated_at = stat.st_mtime
             sub.append({
                 'name': name,
                 'date': datetime.fromtimestamp(date).strftime('%Y-%m-%d %H:%M:%S'),
@@ -29,6 +30,5 @@ def update_docs_map(docs_dir, docs_map_file):
         })
     with open(docs_map_file, 'w') as f:
         json.dump(docs_map, f, indent=4)
-
 
 update_docs_map('blogs/docs', 'blogs/docs-map.json')
