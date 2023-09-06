@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: 3.9
       - name: Run update_docs_map.py script
-        run: python update_docs_map.py
+        run: python blogs/update_docs_map.py
       - name: Commit and push changes
         run: |
           git config --global user.name 'GitHub Actions'
