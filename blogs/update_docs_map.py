@@ -5,8 +5,11 @@ import subprocess
 
 def update_docs_map(docs_dir, docs_map_file):
     docs_map = []
+    if not os.path.exists(docs_dir):
+        return
+
     if not os.path.exists(docs_map_file):
-        updated_at = datetime.now()
+        updated_at = None
     else:
         updated_at = datetime.fromisoformat(subprocess.check_output(['git', 'log', '--diff-filter=M', '--format=%aI', '-1', '--', docs_map_file]).decode().strip())
     for root, dirs, files in os.walk(docs_dir):
