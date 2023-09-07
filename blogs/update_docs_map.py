@@ -36,9 +36,6 @@ def update_docs_map(docs_dir, docs_map_file):
                 updated_at = datetime.fromisoformat(updated_at_str).strftime('%Y-%m-%d %H:%M:%S') if updated_at_str else 'N/A'
                 sub_dict[name]['updated-at'] = updated_at
                 
-            print(f"date_str: {date_str}")
-            print(f"updated_at_str: {updated_at_str}")
-
 
         docs_map_dict[main]['sub'] = list(sub_dict.values())
 
