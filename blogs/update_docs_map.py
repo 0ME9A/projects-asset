@@ -30,10 +30,11 @@ def update_docs_map(docs_dir, docs_map_file):
                 date_str = subprocess.check_output(['git', 'log', '--diff-filter=A', '--format=%aI', '-1', '--', path]).decode().strip()
                 date = datetime.fromisoformat(date_str).strftime('%Y-%m-%d %H:%M:%S') if date_str else 'N/A'
                 sub_dict[name]['date'] = date
-            path = os.path.join(root, file)
-            updated_at_str = subprocess.check_output(['git', 'log', '--diff-filter=M', '--format=%aI', '-1', '--', path]).decode().strip()
-            updated_at = datetime.fromisoformat(updated_at_str).strftime('%Y-%m-%d %H:%M:%S') if updated_at_str else 'N/A'
-            sub_dict[name]['updated-at'] = updated_at
+            else:
+                path = os.path.join(root, file)
+                updated_at_str = subprocess.check_output(['git', 'log', '--diff-filter=M', '--format=%aI', '-1', '--', path]).decode().strip()
+                updated_at = datetime.fromisoformat(updated_at_str).strftime('%Y-%m-%d %H:%M:%S') if updated_at_str else 'N/A'
+                sub_dict[name]['updated-at'] = updated_at
 
         docs_map_dict[main]['sub'] = list(sub_dict.values())
 
