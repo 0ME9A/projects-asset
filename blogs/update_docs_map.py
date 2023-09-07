@@ -5,13 +5,6 @@ import subprocess
 
 def update_docs_map(docs_dir, docs_map_file):
     docs_map = []
-    if not os.path.exists(docs_dir):
-        return
-
-    if not os.path.exists(docs_map_file):
-        updated_at = None
-    else:
-        updated_at = datetime.fromisoformat(subprocess.check_output(['git', 'log', '--diff-filter=M', '--format=%aI', '-1', '--', docs_map_file]).decode().strip())
     for root, dirs, files in os.walk(docs_dir):
         if not files:
             continue
@@ -23,10 +16,11 @@ def update_docs_map(docs_dir, docs_map_file):
             name = os.path.splitext(file)[0]
             path = os.path.join(root, file)
             date = subprocess.check_output(['git', 'log', '--diff-filter=A', '--format=%aI', '-1', '--', path]).decode().strip()
+            updated_at = subprocess.check_output(['git', 'log', '--diff-filter=M', '--format=%aI', '-1', '--', path]).decode().strip()
             sub.append({
                 'name': name,
                 'date': datetime.fromisoformat(date).strftime('%Y-%m-%d %H:%M:%S'),
-                'updated-at': updated_at
+                'updated-at': datetime.fromisoformat(updated_at).strftime('%Y-%m-%d %H:%M:%S')
             })
         if not sub:
             continue
