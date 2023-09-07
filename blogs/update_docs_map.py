@@ -3,6 +3,13 @@ import json
 from datetime import datetime
 import subprocess
 
+def get_file_last_modified_time(file_path):
+    try:
+        timestamp = os.path.getmtime(file_path)
+        return datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
+    except OSError:
+        return 'N/A'
+
 def update_docs_map(docs_dir, docs_map_file):
     # Load the existing JSON file if it exists; otherwise, create an empty map.
     if os.path.exists(docs_map_file):
@@ -32,10 +39,8 @@ def update_docs_map(docs_dir, docs_map_file):
                 sub_dict[name]['date'] = date
             else:
                 path = os.path.join(root, file)
-                updated_at_str = subprocess.check_output(['git', 'log', '--diff-filter=M', '--format=%aI', '-1', '--', path]).decode().strip()
-                updated_at = datetime.fromisoformat(updated_at_str).strftime('%Y-%m-%d %H:%M:%S') if updated_at_str else 'N/A'
+                updated_at = get_file_last_modified_time(path)
                 sub_dict[name]['updated-at'] = updated_at
-                
 
         docs_map_dict[main]['sub'] = list(sub_dict.values())
 
