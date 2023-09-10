@@ -1,82 +1,128 @@
 [
     {
-        "title": "Getting Started with React Hooks",
-        "sub": ["useEffect", "useState", "useMemo"],
-        "created": "2023-09-01T10:00:00Z",
-        "updated": "2023-09-05T15:30:00Z",
-        "contributors": ["githubUser1", "githubUser2"],
-        "keywords": ["React", "Hooks", "useState", "useEffect", "useMemo"]
-    },
-    {
-        "title": "Using Axios for API Requests",
+        "title": "Mastering API Requests with Axios",
+        "desc": "Learn how to use Axios to simplify API requests and handle responses efficiently...",
         "sub": ["Introduction", "Axios"],
         "created": "2023-08-25T14:20:00Z",
         "updated": "2023-08-30T11:45:00Z",
-        "contributors": ["githubUser3", "githubUser4"],
-        "keywords": ["Axios", "API", "HTTP", "Request"]
+        "authors": [
+            {
+                "name": "Sarah Johnson",
+                "githubId": "sarahj"
+            }
+        ],
+        "tags": ["Axios", "API", "HTTP", "JavaScript"]
     },
     {
-        "title": "Responsive Web Design with CSS Grid",
-        "sub": ["Grid Layout", "Media Queries"],
-        "created": "2023-08-15T09:45:00Z",
-        "updated": "2023-08-20T17:10:00Z",
-        "contributors": ["githubUser5"],
-        "keywords": ["CSS Grid", "Responsive Design", "Web Development"]
+        "title": "Building Interactive Web Apps with React",
+        "desc": "Explore how to create engaging web applications using React.js...",
+        "sub": ["Getting Started", "Components", "State Management"],
+        "created": "2023-09-05T09:30:00Z",
+        "updated": "2023-09-10T14:15:00Z",
+        "authors": [
+            {
+                "name": "John Smith",
+                "githubId": "johns"
+            }
+        ],
+        "tags": ["React", "Web Development", "JavaScript"]
     },
     {
-        "title": "Understanding JavaScript Promises",
-        "sub": ["Introduction", "Chaining", "Error Handling"],
-        "created": "2023-07-10T12:15:00Z",
-        "updated": "2023-07-15T19:30:00Z",
-        "contributors": ["githubUser6", "githubUser7"],
-        "keywords": ["JavaScript", "Promises", "Async", "Programming"]
+        "title": "Python for Data Science: An Introduction",
+        "desc": "Start your journey into data science with Python and its powerful libraries...",
+        "sub": ["Python Basics", "Data Analysis", "Visualization"],
+        "created": "2023-08-20T11:15:00Z",
+        "updated": "2023-08-25T16:40:00Z",
+        "authors": [
+            {
+                "name": "Emily Watson",
+                "githubId": "emilyw"
+            }
+        ],
+        "tags": ["Python", "Data Science", "Pandas", "Matplotlib"]
     },
     {
-        "title": "MongoDB Basics for Beginners",
-        "sub": ["Introduction", "CRUD Operations"],
-        "created": "2023-06-20T11:30:00Z",
-        "updated": "2023-06-25T14:45:00Z",
-        "contributors": ["githubUser8"],
-        "keywords": ["MongoDB", "Database", "NoSQL"]
+        "title": "Getting Started with Node.js",
+        "desc": "Learn the fundamentals of Node.js and build scalable server-side applications...",
+        "sub": ["Introduction", "Modules", "HTTP Server"],
+        "created": "2023-08-10T13:50:00Z",
+        "updated": "2023-08-15T18:25:00Z",
+        "authors": [
+            {
+                "name": "Michael Brown",
+                "githubId": "michaelb"
+            }
+        ],
+        "tags": ["Node.js", "JavaScript", "Server"]
     },
     {
-        "title": "Python Flask: Building RESTful APIs",
-        "sub": ["Getting Started", "Endpoints", "Authentication"],
-        "created": "2023-06-05T13:40:00Z",
-        "updated": "2023-06-10T16:55:00Z",
-        "contributors": ["githubUser9", "githubUser10"],
-        "keywords": ["Python", "Flask", "API", "REST"]
+        "title": "Responsive Web Design: CSS Media Queries",
+        "desc": "Create responsive web layouts using CSS media queries for different screen sizes...",
+        "sub": ["Media Query Basics", "Responsive CSS"],
+        "created": "2023-07-28T10:10:00Z",
+        "updated": "2023-08-02T15:55:00Z",
+        "authors": [
+            {
+                "name": "Linda Rodriguez",
+                "githubId": "lindar"
+            }
+        ],
+        "tags": ["Web Design", "CSS", "Responsive Design"]
     },
     {
-        "title": "Introduction to Machine Learning Algorithms",
-        "sub": ["Regression", "Classification", "Clustering"],
-        "created": "2023-05-15T08:50:00Z",
-        "updated": "2023-05-20T12:05:00Z",
-        "contributors": ["githubUser11", "githubUser12"],
-        "keywords": ["Machine Learning", "Algorithms", "Data Science"]
+        "title": "The Art of Debugging in JavaScript",
+        "desc": "Master the art of debugging and troubleshooting JavaScript code effectively...",
+        "sub": ["Debugging Tools", "Common Errors"],
+        "created": "2023-07-15T14:00:00Z",
+        "updated": "2023-07-20T19:30:00Z",
+        "authors": [
+            {
+                "name": "David Clark",
+                "githubId": "davidc"
+            }
+        ],
+        "tags": ["JavaScript", "Debugging", "Programming"]
     },
     {
-        "title": "CSS Flexbox: Creating Flexible Layouts",
-        "sub": ["Flex Containers", "Flex Items"],
-        "created": "2023-05-01T16:25:00Z",
-        "updated": "2023-05-05T20:40:00Z",
-        "contributors": ["githubUser13"],
-        "keywords": ["CSS Flexbox", "Layout", "Web Design"]
+        "title": "Introduction to Machine Learning with Scikit-Learn",
+        "desc": "Explore machine learning basics and build predictive models with Scikit-Learn...",
+        "sub": ["Machine Learning Fundamentals", "Model Training"],
+        "created": "2023-07-05T11:45:00Z",
+        "updated": "2023-07-10T16:20:00Z",
+        "authors": [
+            {
+                "name": "Alice Green",
+                "githubId": "aliceg"
+            }
+        ],
+        "tags": ["Machine Learning", "Scikit-Learn", "Data Science"]
     },
     {
-        "title": "Introduction to Java Programming",
-        "sub": ["Syntax", "Object-Oriented Programming"],
-        "created": "2023-04-10T09:10:00Z",
-        "updated": "2023-04-15T14:20:00Z",
-        "contributors": ["githubUser14", "githubUser15"],
-        "keywords": ["Java", "Programming", "OOP"]
+        "title": "Building Scalable Web APIs with Django",
+        "desc": "Learn how to create RESTful web APIs with Django and Python...",
+        "sub": ["Django Basics", "API Endpoints", "Authentication"],
+        "created": "2023-06-20T09:25:00Z",
+        "updated": "2023-06-25T14:55:00Z",
+        "authors": [
+            {
+                "name": "Mark Turner",
+                "githubId": "markt"
+            }
+        ],
+        "tags": ["Django", "Python", "API Development"]
     },
     {
-        "title": "Diving into Data Analysis with Pandas",
-        "sub": ["Data Cleaning", "Exploratory Data Analysis"],
-        "created": "2023-03-20T14:30:00Z",
-        "updated": "2023-03-25T18:50:00Z",
-        "contributors": ["githubUser16"],
-        "keywords": ["Data Analysis", "Pandas", "Python"]
+        "title": "JavaScript ES6: The Modern Syntax",
+        "desc": "Discover the power of ES6 features and write modern JavaScript code...",
+        "sub": ["Arrow Functions", "Template Literals", "Destructuring"],
+        "created": "2023-06-05T15:15:00Z",
+        "updated": "2023-06-10T20:30:00Z",
+        "authors": [
+            {
+                "name": "Paula Anderson",
+                "githubId": "paulaa"
+            }
+        ],
+        "tags": ["JavaScript", "ES6", "Programming"]
     }
 ]
