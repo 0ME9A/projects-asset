@@ -1,128 +1,62 @@
 [
     {
-        "title": "Mastering API Requests with Axios",
-        "desc": "Learn how to use Axios to simplify API requests and handle responses efficiently...",
-        "sub": ["Introduction", "Axios"],
-        "created": "2023-08-25T14:20:00Z",
-        "updated": "2023-08-30T11:45:00Z",
-        "authors": [
-            {
-                "name": "Sarah Johnson",
-                "githubId": "sarahj"
-            }
-        ],
-        "tags": ["Axios", "API", "HTTP", "JavaScript"]
+       "title": "JavaScript ES6 The Modern Syntax",
+       "desc": "In the ever-evolving world of JavaScript, ES6 (ECMAScript 2015) brought a plethora of modern features and syntax enhancements that revolutionized the way we write JavaScript code. In this blog post, we'll dive deep into the world of ES6 and explore some of its most powerful features.",
+       "created": "2023-08-25",
+       "updated": "2023-08-25",
+       "authors": [
+          {
+             "name": "Baliram Singh (OME9A)",
+             "githubId": "0ME9A"
+          }
+       ],
+       "tags": [
+          "JavaScript",
+          "ES6",
+          "ECMAScript 2015",
+          "Modern JavaScript",
+          "Syntax",
+          "Development"
+       ]
     },
     {
-        "title": "Building Interactive Web Apps with React",
-        "desc": "Explore how to create engaging web applications using React.js...",
-        "sub": ["Getting Started", "Components", "State Management"],
-        "created": "2023-09-05T09:30:00Z",
-        "updated": "2023-09-10T14:15:00Z",
-        "authors": [
-            {
-                "name": "John Smith",
-                "githubId": "johns"
-            }
-        ],
-        "tags": ["React", "Web Development", "JavaScript"]
+       "title": "Understanding the useState Hook in React",
+       "desc": "The `useState` hook is a built-in hook in React that allows you to add state to your functional components. Learn how to use it effectively to create more dynamic and interactive applications.",
+       "created": "2023-08-25",
+       "updated": "2023-08-25",
+       "authors": [
+          {
+             "name": "Baliram Singh (OME9A)",
+             "githubId": "0ME9A"
+          }
+       ],
+       "tags": [
+          "React",
+          "useState",
+          "Hooks",
+          "JavaScript",
+          "State Management"
+       ]
     },
     {
-        "title": "Python for Data Science: An Introduction",
-        "desc": "Start your journey into data science with Python and its powerful libraries...",
-        "sub": ["Python Basics", "Data Analysis", "Visualization"],
-        "created": "2023-08-20T11:15:00Z",
-        "updated": "2023-08-25T16:40:00Z",
-        "authors": [
-            {
-                "name": "Emily Watson",
-                "githubId": "emilyw"
-            }
-        ],
-        "tags": ["Python", "Data Science", "Pandas", "Matplotlib"]
-    },
-    {
-        "title": "Getting Started with Node.js",
-        "desc": "Learn the fundamentals of Node.js and build scalable server-side applications...",
-        "sub": ["Introduction", "Modules", "HTTP Server"],
-        "created": "2023-08-10T13:50:00Z",
-        "updated": "2023-08-15T18:25:00Z",
-        "authors": [
-            {
-                "name": "Michael Brown",
-                "githubId": "michaelb"
-            }
-        ],
-        "tags": ["Node.js", "JavaScript", "Server"]
-    },
-    {
-        "title": "Responsive Web Design: CSS Media Queries",
-        "desc": "Create responsive web layouts using CSS media queries for different screen sizes...",
-        "sub": ["Media Query Basics", "Responsive CSS"],
-        "created": "2023-07-28T10:10:00Z",
-        "updated": "2023-08-02T15:55:00Z",
-        "authors": [
-            {
-                "name": "Linda Rodriguez",
-                "githubId": "lindar"
-            }
-        ],
-        "tags": ["Web Design", "CSS", "Responsive Design"]
-    },
-    {
-        "title": "The Art of Debugging in JavaScript",
-        "desc": "Master the art of debugging and troubleshooting JavaScript code effectively...",
-        "sub": ["Debugging Tools", "Common Errors"],
-        "created": "2023-07-15T14:00:00Z",
-        "updated": "2023-07-20T19:30:00Z",
-        "authors": [
-            {
-                "name": "David Clark",
-                "githubId": "davidc"
-            }
-        ],
-        "tags": ["JavaScript", "Debugging", "Programming"]
-    },
-    {
-        "title": "Introduction to Machine Learning with Scikit-Learn",
-        "desc": "Explore machine learning basics and build predictive models with Scikit-Learn...",
-        "sub": ["Machine Learning Fundamentals", "Model Training"],
-        "created": "2023-07-05T11:45:00Z",
-        "updated": "2023-07-10T16:20:00Z",
-        "authors": [
-            {
-                "name": "Alice Green",
-                "githubId": "aliceg"
-            }
-        ],
-        "tags": ["Machine Learning", "Scikit-Learn", "Data Science"]
-    },
-    {
-        "title": "Building Scalable Web APIs with Django",
-        "desc": "Learn how to create RESTful web APIs with Django and Python...",
-        "sub": ["Django Basics", "API Endpoints", "Authentication"],
-        "created": "2023-06-20T09:25:00Z",
-        "updated": "2023-06-25T14:55:00Z",
-        "authors": [
-            {
-                "name": "Mark Turner",
-                "githubId": "markt"
-            }
-        ],
-        "tags": ["Django", "Python", "API Development"]
-    },
-    {
-        "title": "JavaScript ES6 The Modern Syntax",
-        "desc": "Discover the power of ES6 features and write modern JavaScript code...",
-        "sub": ["Arrow Functions", "Template Literals", "Destructuring"],
-        "created": "2023-06-05T15:15:00Z",
-        "updated": "2023-06-10T20:30:00Z",
-        "authors": [
-            {
-                "name": "Paula Anderson",
-                "githubId": "paulaa"
-            }
-        ],
-        "tags": ["JavaScript", "ES6", "Programming"]
+       "title": "Mastering API Requests with Axios",
+       "desc": "Axios is a popular JavaScript library that simplifies making HTTP requests from a web application. Learn how to perform various types of requests, handle responses, and make your API interactions more efficient.",
+       "created": "2023-08-25",
+       "updated": "2023-08-25",
+       "authors": [
+          {
+             "name": "Baliram Singh (OME9A)",
+             "githubId": "0ME9A"
+          }
+       ],
+       "tags": [
+          "Axios",
+          "JavaScript",
+          "HTTP Requests",
+          "APIs",
+          "Web Development",
+          "Node.js"
+       ]
     }
+
 ]
