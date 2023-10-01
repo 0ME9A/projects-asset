@@ -1,0 +1,15 @@
+{
+    "theme": {
+        "name": "primeBlue",
+        "type": "dark"
+    },
+    "particles": {
+        "animation": true
+    },
+    "sidebar": {
+        "show": false,
+        "hide": false,
+        "auto": true,
+        "position": "left"
+    }
+}
