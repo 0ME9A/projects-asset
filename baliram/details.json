@@ -23,7 +23,7 @@
     "C",
     "Git/GitHub"
   ],
-  "common-skills": [
+  "commonSkills": [
     "React.js",
     "Next.js",
     "TypeScript",
@@ -58,9 +58,9 @@
       "href": "https://figma.com/@ome9a"
     }
   ],
-  "resume-url": "https://github.com/0ME9A/projects-asset/blob/c4a18a4765de51445fb174b4cdf341895dc00b35/baliram/baliram_org.pdf",
-  "profile-img-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/profile.jpg",
-  "banner-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/react-banner.jpg",
+  "resumeUrl": "https://github.com/0ME9A/projects-asset/blob/c4a18a4765de51445fb174b4cdf341895dc00b35/baliram/baliram_org.pdf",
+  "profileImgUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/profile.jpg",
+  "bannerUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/react-banner.jpg",
   "certificates": [
     {
       "id": "freecodecamp",
@@ -70,12 +70,12 @@
         {
           "name": "JavaScript Algorithms and Data Structures",
           "url": "https://www.freecodecamp.org/certification/ome9a/javascript-algorithms-and-data-structures",
-          "preview-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/javascript-algorithms-and-data-structures.png"
+          "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/javascript-algorithms-and-data-structures.png"
         },
         {
           "name": "Front-end Development Libraries",
           "url": "https://www.freecodecamp.org/certification/ome9a/front-end-development-libraries",
-          "preview-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/front-end-development-libraries.png"
+          "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/front-end-development-libraries.png"
         }
       ]
     },
@@ -87,12 +87,12 @@
         {
           "name": "HackerRank CSS",
           "url": "https://www.hackerrank.com/certificates/43529ca6687e",
-          "preview-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hackerrank-css.png"
+          "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hackerrank-css.png"
         },
         {
           "name": "HackerRank JS Basic",
           "url": "https://www.hackerrank.com/certificates/96b7845c0eed",
-          "preview-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hackerrank-js-basic.png"
+          "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hackerrank-js-basic.png"
         }
       ]
     }
@@ -100,7 +100,7 @@
   "languages": ["Hindi", "English", "Spanish"],
   "portfolio": {
     "url": "https://api.github.com/users/0me9a/repos?per_page=100",
-    "repo-filter-keywords": [
+    "repoFilterKeywords": [
       {
         "title": "Animation",
         "value": "animation"
