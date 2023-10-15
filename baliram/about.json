@@ -1,3 +1,97 @@
 {
-  
+  "name": "Baliram Singh",
+  "email": "baliramk505@gmail.com",
+  "phone": "+91 9304982636",
+  "city": "Bihar Sharif",
+  "state": "Bihar",
+  "country": "India",
+  "bio": "Hello! I'm Baliram Singh, a highly motivated and self-taught React.js developer with a passion for building dynamic web applications. My journey in web development started with a curiosity to explore the endless possibilities of creating interactive and user-centric websites. Through self-driven projects and continuous learning, I have developed a deep understanding of front-end technologies and best coding practices. As a developer, I am dedicated to delivering high-quality solutions that not only meet functional requirements but also provide a seamless and enjoyable user experience. I thrive in a collaborative team environment, where I can leverage my skills to contribute effectively and learn from other talented individuals. With a Bachelor of Computer Application (BCA) from Kisan College, Sohsarai Bihar Sharif, I have gained a solid foundation in computer science and programming principles. My academic journey has further fueled my passion for web development and equipped me with the necessary skills to excel in the field.\n Throughout my journey, I have worked on several web development projects that have honed my technical skills and problem-solving abilities. From developing Codinasion, an innovative coding platform, to creating Picarchive, a platform offering high-quality photos, each project has contributed to my growth as a developer.\n I am committed to continuous learning and actively contribute to open-source projects on GitHub. This constant exploration of new technologies and resources keeps me at the forefront of the ever-evolving web development landscape.\n In my free time, I enjoy engaging in personal coding projects to explore new technologies and gain practical experience. I am always excited to collaborate with like-minded individuals and contribute my expertise to meaningful projects.\n My goal is to make a positive impact through innovative web solutions, and I am excited about the endless possibilities that lie ahead in the world of web development. Let's create something amazing together! Feel free to explore my portfolio to see some of the projects I've worked on, and let's connect to discuss how I can contribute to your next web development endeavor.",
+  "skills": [
+    "HTML/HTML4/HTML5",
+    "CSS/CSS3",
+    "JavaScript/ES6/ES7",
+    "Sass",
+    "Bootstrap",
+    "Material UI",
+    "React Native",
+    "jQuery",
+    "Node.js",
+    "Express.js",
+    "Figma",
+    "Python",
+    "PHP",
+    "C",
+    "Git/GitHub"
+  ],
+  "common-skills": [
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Responsive Design",
+    "APIs"
+  ],
+  "social": [
+    {
+      "id": "github",
+      "title": "GitHub",
+      "href": "https://github.com/0me9a"
+    },
+    {
+      "id": "linkedin",
+      "title": "LinkedIn",
+      "href": "https://www.linkedin.com/in/baliram-singh/"
+    },
+    {
+      "id": "front-end-mentor",
+      "title": "Front-end Mentor",
+      "href": "https://www.frontendmentor.io/profile/0ME9A"
+    },
+    {
+      "id": "twitter",
+      "title": "Twitter",
+      "href": "https://twitter.com/omegaStrikes"
+    },
+    {
+      "id": "figma",
+      "title": "Figma",
+      "href": "https://figma.com/@ome9a"
+    }
+  ],
+  "resume-url": "https://github.com/0ME9A/projects-asset/blob/c4a18a4765de51445fb174b4cdf341895dc00b35/baliram/baliram_org.pdf",
+  "profile-img-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/profile.jpg",
+  "banner-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/react-banner.jpg",
+  "certificates": [
+    {
+      "id": "freecodecamp",
+      "source": "FreeCodeCamp",
+      "total": 2,
+      "cert": [
+        {
+          "name": "JavaScript Algorithms and Data Structures",
+          "url": "https://www.freecodecamp.org/certification/ome9a/javascript-algorithms-and-data-structures"
+        },
+        {
+          "name": "Front-end Development Libraries",
+          "url": "https://www.freecodecamp.org/certification/ome9a/front-end-development-libraries"
+        }
+      ]
+    },
+    {
+      "id": "hacker-rank",
+      "source": "Hacker Rank",
+      "total": 2,
+      "cert": [
+        {
+          "name": "HackerRank CSS",
+          "url": "https://www.hackerrank.com/certificates/43529ca6687e"
+        },
+        {
+          "name": "HackerRank JS Basic",
+          "url": "https://www.hackerrank.com/certificates/96b7845c0eed"
+        }
+      ]
+    }
+  ],
+  "languages": ["Hindi", "English", "Spanish"]
 }
