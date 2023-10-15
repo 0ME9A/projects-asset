@@ -123,7 +123,7 @@
         "important": false
       },
       {
-        "id": "front-end-mentor",
+        "id": "frontend-mentor",
         "title": "Front-end Mentor",
         "important": false
       },
@@ -153,12 +153,12 @@
         "important": true
       },
       {
-        "id": "next-js",
+        "id": "nextjs",
         "title": "Next Js",
         "important": false
       },
       {
-        "id": "react-js",
+        "id": "reactjs",
         "title": "React Js",
         "important": false
       },
@@ -178,7 +178,7 @@
         "important": false
       },
       {
-        "id": "tailwind-css",
+        "id": "tailwindcss",
         "title": "TailwindCss",
         "important": false
       },
