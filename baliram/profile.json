@@ -103,80 +103,99 @@
     "url": "https://api.github.com/users/0me9a/repos?per_page=100",
     "repoFilterKeywords": [
       {
+        "id": "animation",
         "title": "Animation",
-        "value": "animation"
+        "important": false
       },
       {
+        "id": "api",
         "title": "Api",
-        "value": "api"
+        "important": false
       },
       {
+        "id": "bootstrap5",
         "title": "Bootstrap5",
-        "value": "bootstrap5"
+        "important": false
       },
       {
+        "id": "fork",
         "title": "Contributions",
-        "value": "fork"
+        "important": false
       },
       {
+        "id": "front-end-mentor",
         "title": "Front-end Mentor",
-        "value": "frontend-mentor"
+        "important": false
       },
       {
+        "id": "games",
         "title": "Games",
-        "value": "games"
+        "important": false
       },
       {
+        "id": "html-css",
         "title": "Html Css",
-        "value": "html-css"
+        "important": false
       },
       {
+        "id": "jquery",
         "title": "Jquery",
-        "value": "jquery"
+        "important": false
       },
       {
+        "id": "wallpaper",
         "title": "Lively Wallpaper",
-        "value": "wallpaper"
+        "important": false
       },
       {
+        "id": "algorithms",
         "title": "Coding Challenges",
-        "value": "algorithms"
+        "important": true
       },
       {
+        "id": "next-js",
         "title": "Next Js",
-        "value": "nextjs"
+        "important": false
       },
       {
+        "id": "react-js",
         "title": "React Js",
-        "value": "reactjs"
+        "important": false
       },
       {
+        "id": "react-native",
         "title": "React Native",
-        "value": "react-native"
+        "important": false
       },
       {
+        "id": "sandbox",
         "title": "Sandbox",
-        "value": "sandbox"
+        "important": false
       },
       {
+        "id": "sass",
         "title": "Sass",
-        "value": "sass"
+        "important": false
       },
       {
+        "id": "tailwind-css",
         "title": "TailwindCss",
-        "value": "tailwindcss"
+        "important": false
       },
       {
+        "id": "tools",
         "title": "Tools",
-        "value": "tools"
+        "important": false
       },
       {
+        "id": "typescript",
         "title": "Typescript",
-        "value": "typescript"
+        "important": false
       },
       {
+        "id": "website",
         "title": "Websites",
-        "value": "website"
+        "important": false
       }
     ]
   }
