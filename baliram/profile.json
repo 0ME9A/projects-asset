@@ -67,7 +67,7 @@
       "id": "freecodecamp",
       "source": "FreeCodeCamp",
       "total": 2,
-      "cert": [
+      "certs": [
         {
           "name": "JavaScript Algorithms and Data Structures",
           "url": "https://www.freecodecamp.org/certification/ome9a/javascript-algorithms-and-data-structures",
@@ -84,16 +84,16 @@
       "id": "hacker-rank",
       "source": "Hacker Rank",
       "total": 2,
-      "cert": [
+      "certs": [
         {
           "name": "HackerRank CSS",
           "url": "https://www.hackerrank.com/certificates/43529ca6687e",
-          "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hackerrank-css.png"
+          "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hacker-rank-css.png"
         },
         {
           "name": "HackerRank JS Basic",
           "url": "https://www.hackerrank.com/certificates/96b7845c0eed",
-          "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hackerrank-js-basic.png"
+          "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hacker-rank-js-basic.png"
         }
       ]
     }
