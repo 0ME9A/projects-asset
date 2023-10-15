@@ -69,11 +69,13 @@
       "cert": [
         {
           "name": "JavaScript Algorithms and Data Structures",
-          "url": "https://www.freecodecamp.org/certification/ome9a/javascript-algorithms-and-data-structures"
+          "url": "https://www.freecodecamp.org/certification/ome9a/javascript-algorithms-and-data-structures",
+          "preview-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/javascript-algorithms-and-data-structures.png"
         },
         {
           "name": "Front-end Development Libraries",
-          "url": "https://www.freecodecamp.org/certification/ome9a/front-end-development-libraries"
+          "url": "https://www.freecodecamp.org/certification/ome9a/front-end-development-libraries",
+          "preview-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/front-end-development-libraries.png"
         }
       ]
     },
@@ -84,14 +86,97 @@
       "cert": [
         {
           "name": "HackerRank CSS",
-          "url": "https://www.hackerrank.com/certificates/43529ca6687e"
+          "url": "https://www.hackerrank.com/certificates/43529ca6687e",
+          "preview-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hackerrank-css.png"
         },
         {
           "name": "HackerRank JS Basic",
-          "url": "https://www.hackerrank.com/certificates/96b7845c0eed"
+          "url": "https://www.hackerrank.com/certificates/96b7845c0eed",
+          "preview-url": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hackerrank-js-basic.png"
         }
       ]
     }
   ],
-  "languages": ["Hindi", "English", "Spanish"]
+  "languages": ["Hindi", "English", "Spanish"],
+  "portfolio": {
+    "url": "https://api.github.com/users/0me9a/repos?per_page=100",
+    "repo-filter-keywords": [
+      {
+        "title": "Animation",
+        "value": "animation"
+      },
+      {
+        "title": "Api",
+        "value": "api"
+      },
+      {
+        "title": "Bootstrap5",
+        "value": "bootstrap5"
+      },
+      {
+        "title": "Contributions",
+        "value": "fork"
+      },
+      {
+        "title": "Front-end Mentor",
+        "value": "frontend-mentor"
+      },
+      {
+        "title": "Games",
+        "value": "games"
+      },
+      {
+        "title": "Html Css",
+        "value": "html-css"
+      },
+      {
+        "title": "Jquery",
+        "value": "jquery"
+      },
+      {
+        "title": "Lively Wallpaper",
+        "value": "wallpaper"
+      },
+      {
+        "title": "Coding Challenges",
+        "value": "algorithms"
+      },
+      {
+        "title": "Next Js",
+        "value": "nextjs"
+      },
+      {
+        "title": "React Js",
+        "value": "reactjs"
+      },
+      {
+        "title": "React Native",
+        "value": "react-native"
+      },
+      {
+        "title": "Sandbox",
+        "value": "sandbox"
+      },
+      {
+        "title": "Sass",
+        "value": "sass"
+      },
+      {
+        "title": "TailwindCss",
+        "value": "tailwindcss"
+      },
+      {
+        "title": "Tools",
+        "value": "tools"
+      },
+      {
+        "title": "Typescript",
+        "value": "typescript"
+      },
+      {
+        "title": "Websites",
+        "value": "website"
+      }
+    ]
+  }
 }
