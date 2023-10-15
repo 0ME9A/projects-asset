@@ -101,6 +101,7 @@
   "languages": ["Hindi", "English", "Spanish"],
   "portfolio": {
     "url": "https://api.github.com/users/0me9a/repos?per_page=100",
+    "thumbnailPath": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/thumb/",
     "repoFilterKeywords": [
       {
         "id": "animation",
