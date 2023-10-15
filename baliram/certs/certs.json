@@ -12,5 +12,19 @@
         "url": "https://www.freecodecamp.org/certification/ome9a/front-end-development-libraries"
       }
     ]
+  },
+  {
+    "source": "Hacker Rank",
+    "total": 2,
+    "cert": [
+      {
+        "name": "hacker-rank-css",
+        "url": "https://www.freecodecamp.org/certification/ome9a/javascript-algorithms-and-data-structures"
+      },
+      {
+        "name": "hacker-rank-js",
+        "url": "https://www.hackerrank.com/certificates/96b7845c0eed"
+      }
+    ]
   }
 ]
