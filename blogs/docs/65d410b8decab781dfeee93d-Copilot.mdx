@@ -1,0 +1,55 @@
+export async function POST(request: Request) {
+  const payload: T_formField = await request.json();
+
+  const data = {
+    title: payload.title.trim(),
+    description: payload.description.trim(),
+    authors: payload.authors.split(",").map((item) => item.trim()),
+    tags: payload.tags.split(",").map((item) => item.trim()),
+  };
+
+  try {
+    await mongoose.connect(startDB);
+
+    const blogData = new Blogs(data);
+    const result = await blogData.save();
+
+    if (!result._id) {
+      throw new Error("Github Api connection failed.");
+    }
+    // Your GitHub title, repository, and personal access token
+    const title = "0ME9A";
+    const repository = "projects-asset";
+    const token = process.env.ACCESS_TOKEN;
+
+    // Generate a custom slug from the title
+    const slug = payload.title.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "");
+
+    const url = `https://api.github.com/repos/${title}/${repository}/contents/blogs/docs/${slug}.mdx`;
+
+    const headers = new Headers({
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    });
+
+    const response = await fetch(url, {
+      method: "PUT",
+      headers,
+      body: JSON.stringify({
+        message: `Blog post created: ${payload.title}`,
+        // Use Buffer.from().toString('base64') to encode content
+        content: Buffer.from(payload.mdx).toString('base64'),
+      }),
+    });
+
+    if (response.ok) {
+      alert("MDX file uploaded successfully!");
+    } else {
+      alert("Failed to upload MDX file. Please check your credentials.");
+    }
+
+    return Response.json({ result, success: true });
+  } catch (error) {
+    console.error("Error uploading MDX file:", error.message || error);
+  }
+}
