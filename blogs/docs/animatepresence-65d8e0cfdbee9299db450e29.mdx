@@ -1,14 +1,21 @@
-AnimatePresence
-Animate components when they're removed from the React tree.
+title: AnimatePresence
+description: Animate components when they're removed from the React tree. AnimatePresence allows components to animate out when they're removed from the React tree.
+---
 
-AnimatePresence allows components to animate out when they're removed from the React tree.
+# AnimatePresence
+### Animate components when they're removed from the React tree.
+
+ AnimatePresence allows components to animate out when they're removed from the React tree.
 
 It's required to enable exit animations because React lacks a lifecycle method that:
 
 Notifies components when they're going to be unmounted and
 Allows them to defer that unmounting until after an operation is complete (for instance an animation).
-import { motion, AnimatePresence } from "framer-motion"
 
+```
+import { motion, AnimatePresence } from "framer-motion"
+```
+```
 export const MyComponent = ({ isVisible }) => (
   <AnimatePresence>
     {isVisible && (
@@ -20,3 +27,4 @@ export const MyComponent = ({ isVisible }) => (
     )}
   </AnimatePresence>
 )
+```
