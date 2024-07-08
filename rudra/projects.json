@@ -1,0 +1,50 @@
+[
+  {
+    "id": "a1",
+    "imgUrl": "/services/img-a1.jpg",
+    "title": "Architects",
+    "desc": "We have a team of skilled, experienced & professional architects who will help you to design your dreams."
+  },
+  {
+    "id": "a2",
+    "imgUrl": "/services/img-a2.jpg",
+    "title": "Architects For Bungalow",
+    "desc": "Get the consultation & render the responsibility to the best architects for designing splendid bungalows."
+  },
+  {
+    "id": "a3",
+    "imgUrl": "/services/img-b1.jpg",
+    "title": "3d Interior Designers",
+    "desc": "Being one of the leading organizations, we provide 3D interior designing services as per our clients demands."
+  },
+  {
+    "id": "a4",
+    "imgUrl": "/services/img-b2.jpg",
+    "title": "3d Architectural Designing Services",
+    "desc": "Our skilled and experienced team excels in providing 3D architectural designing services to our clients."
+  },
+  {
+    "id": "a5",
+    "imgUrl": "/services/img-e1.jpg",
+    "title": "Residence Interior Designers",
+    "desc": "We are professionals Interior designers offering best designs for Residence at an affordable price."
+  },
+  {
+    "id": "a6",
+    "imgUrl": "/services/img-d2.jpg",
+    "title": "Building Structural Designing Services",
+    "desc": "We have an expert team to provide building structures and designing so that you get the best output out of it."
+  },
+  {
+    "id": "a7",
+    "imgUrl": "/services/img-e3.jpg",
+    "title": "Commercial Interior Designers",
+    "desc": "We have commercial interior designers who are expert in decorating your space and customize them."
+  },
+  {
+    "id": "a8",
+    "imgUrl": "/services/img-e2.jpg",
+    "title": "Interior Designer Consultants",
+    "desc": "Consult our team of expert interior designers who are well experienced in their field."
+  }
+]
