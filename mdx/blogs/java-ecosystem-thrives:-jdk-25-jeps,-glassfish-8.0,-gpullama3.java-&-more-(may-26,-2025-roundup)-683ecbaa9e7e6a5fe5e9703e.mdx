@@ -1,0 +1,83 @@
+---
+title: "Java Ecosystem Thrives: JDK 25 JEPs, GlassFish 8.0, GPULlama3.java & More (May 26, 2025 Roundup)"
+description: "Dive into the latest Java news from May 26, 2025! Discover JDK 25 updates, GlassFish 8.0's advancements, the innovative GPULlama3.java project, and key releases from Spring, Hibernate, Quarkus, Groovy, and JHipster. Stay ahead in the Java world!"
+keywords: "Java, JDK 25, GlassFish, Jakarta EE, TornadoVM, Spring Framework, Hibernate, Quarkus, Groovy, JHipster, Software Development, Programming, News, Updates"
+---
+
+
+# Java Ecosystem Thrives: JDK 25 JEPs, GlassFish 8.0, GPULlama3.java & More (May 26, 2025 Roundup)
+
+The Java landscape continues to evolve at a rapid pace, bringing exciting advancements and crucial updates for developers worldwide. This past week, May 26th, 2025, was no exception, with significant news across OpenJDK, enterprise Java, and popular frameworks. Let's dive into the highlights!
+
+## OpenJDK & JDK 25: Future-Proofing Java
+
+The upcoming JDK 25 is shaping up to be a powerhouse, with several Job Enhancement Proposals (JEPs) now officially targeted. These JEPs promise to enhance performance, observability, and security within the Java platform.
+
+* **JEP 521: Generational Shenandoah**: Further improves the low-pause Shenandoah garbage collector.
+* **JEP 520: JFR Method Timing & Tracing**: Enhances Java Flight Recorder for more detailed method timing and tracing.
+* **JEP 518: JFR Cooperative Sampling**: Adds cooperative sampling capabilities to JFR.
+* **JEP 470: PEM Encodings of Cryptographic Objects (Preview)**: Introduces support for PEM-encoded cryptographic objects, offering a standardized and flexible way to handle cryptographic keys and certificates.
+
+Additionally, **JEP 509, JFR CPU-Time Profiling (Experimental)**, is now a Proposed to Target JEP. This experimental feature aims to bolster JFR with CPU-time profiling information on Linux, a boon for performance analysis. The review for this JEP is expected to conclude on June 4, 2025.
+
+For those eager to get hands-on, **Build 25 of the JDK 25 early-access builds** was made available, incorporating fixes from previous builds. Developers are encouraged to report any bugs they encounter via the [Java Bug Database](https://bugs.java.com/bugdatabase/).
+
+## GlassFish: Jakarta EE Progress & Robust Releases
+
+GlassFish, a key player in the Jakarta EE ecosystem, has seen significant updates with its latest maintenance releases.
+
+* **GlassFish 8.0.0 (Twelfth Maintenance Release)**: This release is a major step forward, having successfully passed the final Jakarta EE 11 Web Profile TCK and the proposed final Jakarta EE 11 Platform TCK. It brings improved class loader initialization, refined resource management, and a more robust Maven build, especially for Windows users. You can find more details in the [GlassFish 8.0.0 release notes](https://projects.eclipse.org/projects/ee4j.glassfish/).
+* **GlassFish 7.0.25 (Twenty-Fifth Maintenance Release)**: This version introduces parallel-capable GlassFish classloaders and crucial refinements to the GlassFish Java Util Logging Extension (GJULE), addressing multiple race conditions and logging issues. Refer to the [GlassFish 7.0.25 release notes](https://projects.eclipse.org/projects/ee4j.glassfish/releases/7.0.25) for more information.
+
+## Jakarta EE: The Road to 11 and Beyond
+
+The excitement around Jakarta EE is palpable! Ivar Grimstad, Jakarta EE Developer Advocate, confirmed that the **Jakarta EE 11 Platform GA release is imminent**, with the pull request for the release review already created. With Eclipse GlassFish passing the TCK on both Java SE 17 and 21, the release review ballot is expected to open soon. The full Jakarta EE 11 Platform is anticipated to be generally available in June 2025.
+
+Looking further ahead, all plans for **Jakarta EE 12 specifications** have been approved. The focus now shifts to defining Milestone 0, which will involve essential steps for specification projects, including verifying CI jobs and configuring publishing to Maven Central after the end-of-life of OSSRH.
+
+## TornadoVM: GPU-Accelerated Llama 3 Inference in Java
+
+This is a game-changer for AI in Java! The TornadoVM team has unveiled the **GPULlama3.java project**, an open-source initiative bringing GPU-accelerated Llama 3 inference directly to Java. Leveraging TornadoVM's Just-in-Time compiler, this project builds upon the existing Llama3.java and enables parallelism and hardware acceleration.
+
+Key features of this initial release include:
+* GPU Acceleration on NVIDIA GPUs using both OpenCL and PTX backends.
+* Support for the GPT-Generated Unified Format (GGUF).
+
+This project opens new doors for high-performance AI applications written entirely in Java. Explore the project on their [GitHub repository](https://github.com/beehive-lab/GPULlama3.java).
+
+## Spring Framework: Modulith, Cloud, and Security Fixes
+
+The Spring ecosystem continues its relentless pace of innovation and refinement.
+
+* **Spring Modulith 1.4.0 (GA)**: This release delivers bug fixes, dependency upgrades, and new features designed to enhance modular application development. Notable additions include `detectNamedInterfaces()` for improved module detection and a refined `ApplicationModuleInitializer`. Check the [Spring Modulith release notes](https://spring.io/blog/2025/04/25/spring-modulith-1-4-rc1-1-3-5-and-1-2-11-released) for details (note: this link points to an RC blog post, but the GA notes should follow).
+* **Spring Cloud 2025.0.0 (Northfields) (GA)**: This major release brings significant updates to sub-projects like Spring Cloud Kubernetes 3.3.0, Spring Cloud Function 4.3.0, Spring Cloud Stream 4.3.0, and Spring Cloud Circuit Breaker 3.3.0. A crucial **breaking change** in Spring Cloud Gateway involves new module and starter names to better distinguish between server and proxy exchange styles, and Web MVC vs. WebFlux stacks.
+* **Spring Cloud Gateway Security Fix (CVE-2025-41235)**: Alongside 2025.0.0, versions 4.2.3, 4.1.8, 4.0.12, and 3.1.10 of Spring Cloud Gateway were released to address CVE-2025-41235. This vulnerability allowed X-Forwarded-For and Forwarded headers to be forwarded from untrusted proxies. Forwarding these headers is now **disabled by default**, with safer configuration options available. You can find more details on these Spring Cloud releases in the [official Spring Blog](https://spring.io/blog/2025/05/29/spring-cloud-2025-0-0-is-abvailable).
+
+## Hibernate: Reactive and Search Advancements
+
+Hibernate, the venerable ORM framework, continues to push boundaries with its reactive and search capabilities.
+
+* **Hibernate Reactive 3.0.0.Final and 4.0.0.Beta1**: These releases bring compatibility with Hibernate ORM 7.0.0.Final, Vert.x 4.15.5 (for 3.x) and 5.0.0 (for 4.x), and Mutiny 2.9.0. A key change in 3.0.0.Final is the `getResultType()` method's return type in `MutationSpecificationImpl` changing from `Void` to `null` to resolve validation errors. Explore the [release notes for Hibernate Reactive 3.0.0.Final](https://hibernate.org/reactive/documentation/release-notes/) and [4.0.0.Beta1](https://hibernate.org/reactive/documentation/release-notes/) (links may vary by release, look for the official documentation).
+* **Hibernate Search 8.0.0 (First Release Candidate)**: This RC provides bug fixes, compatibility with Hibernate ORM 7.0.0.Final, improved integration with Hibernate Models, and adaptations to the Search DSL API for easier migration from previous versions. Keep an eye on the [Hibernate Search project page](https://hibernate.org/search/documentation/releases/) for official announcements and change lists.
+
+## Quarkus: Boosting Developer Productivity
+
+Quarkus, the "Supersonic Subatomic Java" framework, continues its rapid release cycle with new features and improvements.
+
+* **Quarkus 3.23.0**: This release brings bug fixes, dependency upgrades, and notable new features, including support for named persistence units and data sources with Hibernate Reactive, and the ability to establish authentication with an OIDC bearer token. Check out the [Quarkus 3.23.0 release notes](https://quarkus.io/blog/quarkus-3-23-0-released/) for full details.
+
+## Groovy: Moving Towards Version 5.0
+
+The dynamic language for the JVM is progressing towards its next major version.
+
+* **Groovy 5.0.0.Beta1 (First Beta Release)**: This beta ships with bug fixes, dependency upgrades, and exciting new features such as support for JEP 394 (Pattern Matching for instanceof), a feature introduced in JDK 16. It also adds a new `injectAll()` method to `DefaultGroovyMethods`. Find the official release notes and download links on the [Apache Groovy website](https://groovy.apache.org/releasenotes/groovy-5.0.html).
+
+## JHipster: Streamlining Full-Stack Development
+
+JHipster, the popular application generator, continues to simplify the development of modern web applications and microservices.
+
+* **JHipster Lite 1.32.0**: This release focuses on bug fixes, documentation improvements, and refactoring. Key new features include support for Docker Compose in Spring Boot and enhanced testing code coverage with Cypress and Vitest. This release also aligns with Spring Boot 3.5.0. Explore the [JHipster Lite release notes](https://lite.jhipster.tech/releases/) for more.
+
+---
+
+That wraps up another eventful week in the Java world! From core JDK advancements to powerful framework updates and innovative AI integrations, the ecosystem continues to demonstrate its vitality and adaptability. Stay tuned to ome9a.com for more cutting-edge Java insights!
