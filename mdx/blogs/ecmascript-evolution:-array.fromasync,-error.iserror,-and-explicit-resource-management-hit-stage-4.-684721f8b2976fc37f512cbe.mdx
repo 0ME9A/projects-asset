@@ -4,13 +4,13 @@ description: "Stay updated with the latest JavaScript language features! Discove
 keywords: "JavaScript, ECMAScript, TC39, Array.fromAsync, Error.isError, Explicit Resource Management, Stage 4, Language Features, Web Development, Programming, Ome9a"
 ---
 
-# ECMAScript Evolution: `Array.fromAsync`, `Error.isError`, and Explicit Resource Management Hit Stage 4!
+# ECMAScript Evolution: Array.fromAsync, Error.isError, and Explicit Resource Management Hit Stage 4!
 
 The JavaScript language is a constantly evolving beast, thanks to the dedicated efforts of the TC39 committee. This committee is responsible for shaping the future of ECMAScript, the standard upon which JavaScript is built. We're thrilled to highlight some recent proposals that have reached **Stage 4**, meaning they are finalized and will be included in upcoming ECMAScript editions, bringing powerful new capabilities to your JavaScript projects.
 
 Let's dive into these exciting new features:
 
-### `Array.fromAsync`: Bridging Synchronous and Asynchronous Iteration
+### Array.fromAsync: Bridging Synchronous and Asynchronous Iteration
 
 You're likely familiar with `Array.from()`, a handy static method that creates a new, shallow-copied Array instance from an array-like or iterable object. However, what if your data source is asynchronous? This is where `Array.fromAsync()` steps in!
 
@@ -55,7 +55,7 @@ Array.fromAsync(promises, async (x) => x * 2).then(arr => console.log(arr)); // 
 
 This feature fills a crucial gap in JavaScript's asynchronous capabilities, making it easier to work with data streams. You can find more in-depth examples and the specification details on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fromAsync).
 
-### `Error.isError`: A More Robust Way to Check for Errors
+### Error.isError: A More Robust Way to Check for Errors
 
 For years, developers have relied on `instanceof Error` to check if a value is an error object. While often sufficient, this approach has limitations, particularly when dealing with errors originating from different JavaScript realms (e.g., iframes, web workers) or "fake" error-like objects that don't genuinely originate from the `Error` constructor.
 
@@ -90,7 +90,7 @@ console.log(Error.isError(fakeError));         // false (correctly rejects)
 
 `Error.isError()` ensures that your error handling logic is more resilient and accurate, especially in environments where code from multiple sources or contexts might interact. You can learn more about its implementation and benefits on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/isError).
 
-### Explicit Resource Management: Deterministic Cleanup with `using` and `await using`
+### Explicit Resource Management: Deterministic Cleanup with *using* and *await using*
 
 Managing resources like file handles, network connections, database connections, or even event listeners is crucial for preventing memory leaks and ensuring application stability. Traditionally, JavaScript developers have relied on `try...finally` blocks to ensure cleanup, which can become verbose and error-prone, especially with multiple resources.
 
