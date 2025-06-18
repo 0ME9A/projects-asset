@@ -1,61 +1,84 @@
 {
   "firstName": "Baliram",
   "lastName": "Singh",
-  "email": "baliramk505@gmail.com",
+  "email": "contact@ome9a.com",
   "phone": "+91 9304982636",
-  "city": "Bihar Sharif",
+  "city": "Patna",
   "state": "Bihar",
   "country": "India",
-  "bio": "Hello! I'm Baliram Singh, a highly motivated and self-taught React.js developer with a passion for building dynamic web applications. My journey in web development started with a curiosity to explore the endless possibilities of creating interactive and user-centric websites. Through self-driven projects and continuous learning, I have developed a deep understanding of front-end technologies and best coding practices. As a developer, I am dedicated to delivering high-quality solutions that not only meet functional requirements but also provide a seamless and enjoyable user experience. I thrive in a collaborative team environment, where I can leverage my skills to contribute effectively and learn from other talented individuals. With a Bachelor of Computer Application (BCA) from Kisan College, Sohsarai Bihar Sharif, I have gained a solid foundation in computer science and programming principles. My academic journey has further fueled my passion for web development and equipped me with the necessary skills to excel in the field.\n Throughout my journey, I have worked on several web development projects that have honed my technical skills and problem-solving abilities. From developing Codinasion, an innovative coding platform, to creating Picarchive, a platform offering high-quality photos, each project has contributed to my growth as a developer.\n I am committed to continuous learning and actively contribute to open-source projects on GitHub. This constant exploration of new technologies and resources keeps me at the forefront of the ever-evolving web development landscape.\n In my free time, I enjoy engaging in personal coding projects to explore new technologies and gain practical experience. I am always excited to collaborate with like-minded individuals and contribute my expertise to meaningful projects.\n My goal is to make a positive impact through innovative web solutions, and I am excited about the endless possibilities that lie ahead in the world of web development. Let's create something amazing together! Feel free to explore my portfolio to see some of the projects I've worked on, and let's connect to discuss how I can contribute to your next web development endeavor.",
+  "bio": "Hello! At ome9a, we specialize in crafting dynamic and high-quality **software solutions** tailored to your unique needs. Founded by Baliram Singh, a passionate and self-taught developer, ome9a brings extensive expertise across various cutting-edge technologies.\n\nOur journey began with a singular vision: to empower businesses with stunning, functional, and user-centric **digital products**. We pride ourselves on delivering comprehensive development services, from intricate UI/UX design to robust back-end implementation and seamless multi-platform support.\n\nWhether you need a sophisticated **web application** (React, Next.js, PHP, Laravel), a performant **mobile application** (React Native, Kotlin, Java), or **custom desktop software** (Electron.js, C++), ome9a is equipped to bring your digital vision to life at an affordable price.\n\nBeyond development, we offer dedicated **software management and maintenance services**, ensuring your applications remain secure, updated, and optimized for peak performance. Our commitment extends to providing continuous support and fostering long-term partnerships with our clients.\n\nAt ome9a, we believe in constant innovation and adopting best coding practices. Baliram Singh actively contributes to the open-source community and continuously explores new technologies, ensuring that ome9a delivers solutions at the forefront of the ever-evolving software development landscape.\n\nWe are excited to collaborate with businesses and individuals seeking impactful software solutions. Explore our portfolio to see some of the projects we've delivered, and let's connect to discuss how ome9a can empower your next digital endeavor. Let's create something amazing together!",
   "skills": [
-    "HTML/HTML4/HTML5",
+    "HTML/HTML5",
     "CSS/CSS3",
-    "JavaScript/ES6/ES7",
+    "JavaScript/ES6+/ES7+",
+    "TypeScript",
     "Sass",
     "Bootstrap",
     "Material UI",
     "React Native",
+    "Kotlin",
+    "Java",
+    "Electron.js",
+    "C++",
     "jQuery",
     "Node.js",
     "Express.js",
-    "Figma",
     "Python",
     "PHP",
+    "Laravel",
     "C",
-    "Git/GitHub"
+    "Git/GitHub",
+    "Figma",
+    "Docker",
+    "AWS/GCP (Basic)",
+    "Database Management (SQL/NoSQL)"
   ],
   "commonSkills": [
-    "React.js",
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
+    "Full-Stack Development",
+    "Web Development",
+    "Mobile Development",
+    "Desktop Development",
+    "Custom Software Solutions",
     "Responsive Design",
-    "APIs"
+    "UI/UX Design Principles",
+    "APIs (REST/GraphQL)",
+    "Version Control (Git)",
+    "Agile Methodologies",
+    "Performance Optimization",
+    "Cross-Platform Development"
+  ],
+  "servicesOffered": [
+    "Web Application Development (Frontend & Backend)",
+    "Mobile App Development (Native & Cross-Platform)",
+    "Desktop Application Development",
+    "Custom Software Solutions",
+    "UI/UX Design",
+    "Website & Software Maintenance and Management"
   ],
   "social": [
     {
       "id": "github",
-      "title": "GitHub",
+      "title": "GitHub (ome9a)",
       "href": "https://github.com/0me9a"
     },
     {
       "id": "linkedin",
-      "title": "LinkedIn",
+      "title": "LinkedIn (Baliram Singh)",
       "href": "https://www.linkedin.com/in/baliram-singh/"
     },
     {
       "id": "front-end-mentor",
-      "title": "Front-end Mentor",
+      "title": "Front-end Mentor (ome9a)",
       "href": "https://www.frontendmentor.io/profile/0ME9A"
     },
     {
       "id": "twitter",
-      "title": "Twitter",
+      "title": "Twitter (ome9a / Baliram Singh)",
       "href": "https://twitter.com/omegaStrikes"
     },
     {
       "id": "figma",
-      "title": "Figma",
+      "title": "Figma (Baliram Singh)",
       "href": "https://figma.com/@baliram"
     }
   ],
@@ -72,11 +95,6 @@
           "name": "JavaScript Algorithms and Data Structures",
           "url": "https://www.freecodecamp.org/certification/ome9a/javascript-algorithms-and-data-structures",
           "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/javascript-algorithms-and-data-structures.png"
-        },
-        {
-          "name": "Front-end Development Libraries",
-          "url": "https://www.freecodecamp.org/certification/ome9a/front-end-development-libraries",
-          "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/front-end-development-libraries.png"
         }
       ]
     },
@@ -89,115 +107,9 @@
           "name": "HackerRank CSS",
           "url": "https://www.hackerrank.com/certificates/43529ca6687e",
           "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hacker-rank-css.png"
-        },
-        {
-          "name": "HackerRank JS Basic",
-          "url": "https://www.hackerrank.com/certificates/96b7845c0eed",
-          "previewUrl": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/baliram/imgs/certs/hacker-rank-js-basic.png"
         }
       ]
     }
   ],
-  "languages": ["Hindi", "English", "Spanish"],
-  "portfolio": {
-    "url": "https://api.github.com/users/0me9a/repos?per_page=100",
-    "thumbnailPath": "https://raw.githubusercontent.com/0ME9A/projects-asset/main/thumb/",
-    "repoFilterKeywords": [
-      {
-        "id": "animation",
-        "title": "Animation",
-        "important": false
-      },
-      {
-        "id": "api",
-        "title": "Api",
-        "important": false
-      },
-      {
-        "id": "bootstrap5",
-        "title": "Bootstrap5",
-        "important": false
-      },
-      {
-        "id": "fork",
-        "title": "Contributions",
-        "important": false
-      },
-      {
-        "id": "frontend-mentor",
-        "title": "Front-end Mentor",
-        "important": false
-      },
-      {
-        "id": "games",
-        "title": "Games",
-        "important": false
-      },
-      {
-        "id": "html-css",
-        "title": "Html Css",
-        "important": false
-      },
-      {
-        "id": "jquery",
-        "title": "Jquery",
-        "important": false
-      },
-      {
-        "id": "wallpaper",
-        "title": "Lively Wallpaper",
-        "important": false
-      },
-      {
-        "id": "algorithms",
-        "title": "Coding Challenges",
-        "important": true
-      },
-      {
-        "id": "nextjs",
-        "title": "Next Js",
-        "important": false
-      },
-      {
-        "id": "reactjs",
-        "title": "React Js",
-        "important": false
-      },
-      {
-        "id": "react-native",
-        "title": "React Native",
-        "important": false
-      },
-      {
-        "id": "sandbox",
-        "title": "Sandbox",
-        "important": false
-      },
-      {
-        "id": "sass",
-        "title": "Sass",
-        "important": false
-      },
-      {
-        "id": "tailwindcss",
-        "title": "TailwindCss",
-        "important": false
-      },
-      {
-        "id": "tools",
-        "title": "Tools",
-        "important": false
-      },
-      {
-        "id": "typescript",
-        "title": "Typescript",
-        "important": false
-      },
-      {
-        "id": "website",
-        "title": "Websites",
-        "important": false
-      }
-    ]
-  }
+  "languages": ["Hindi", "English"]
 }
