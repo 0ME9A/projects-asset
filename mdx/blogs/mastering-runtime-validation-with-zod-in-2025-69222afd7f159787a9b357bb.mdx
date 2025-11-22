@@ -1,0 +1,152 @@
+---
+title: "Mastering Runtime Validation with Zod in 2025"
+description: "The definitive 2025 guide to Zod: schema composition, TypeScript inference, safe parsing, custom errors, and production integrations with React Hook Form, Next.js Server Actions, tRPC, Bun, and more."
+keywords: "Zod, TypeScript validation, runtime validation, React Hook Form, Next.js Server Actions, tRPC, Bun validation, schema composition"
+seoKeywords: "Zod tutorial 2025, TypeScript runtime validation, safe parsing, Zod React Hook Form, Zod Next.js, Zod tRPC"
+category: "TypeScript"
+---
+
+# Mastering Runtime Validation with Zod in 2025
+
+In 2025, Zod is the undisputed king of runtime validation in TypeScript. Zero dependencies, perfect inference, and first-class support across the entire stack (frontend, backend, edge) make it irreplaceable.
+
+## Why Zod Dominates in 2025
+
+- 100% TypeScript inference
+- Zero dependencies, tree-shakable
+- Safe parsing that never throws
+- Coercion, transforms, discriminated unions
+- Built-in love from Next.js, tRPC, React Hook Form, Bun
+
+## Core Concepts & 2025 Best Practices
+
+### 1. Basic Schema + Inference
+```ts
+import { z } from "zod";
+
+const UserSchema = z.object({
+  name: z.string().min(2).max(50),
+  email: z.string().email(),
+  age: z.number().int().min(13).optional(),
+});
+
+type User = z.infer<typeof UserSchema>;
+```
+
+### 2. Safe Parsing (Never Throw)
+```ts
+const result = UserSchema.safeParse(data);
+if (!result.success) return { error: result.error.format() };
+const user: User = result.data; // fully typed
+```
+
+### 3. Coercion – The Form Savior
+```ts
+const FormSchema = z.object({
+  age: z.coerce.number().min(13),
+  isActive: z.coerce.boolean(),
+  joinedAt: z.coerce.date(),
+  tags: z.coerce.string().array().default([]),
+});
+// "25", "true", "2025-01-01" → number, boolean, Date automatically
+```
+
+### 4. Discriminated Unions (Type-Safe Polymorphism)
+```ts
+const ShapeSchema = z.discriminatedUnion("type", [
+  z.object({ type: z.literal("circle"), radius: z.number() }),
+  z.object({ type: z.literal("square"), side: z.number() }),
+]);
+
+type Shape = z.infer<typeof ShapeSchema>;
+//   ^? { type: "circle"; radius: number } | { type: "square"; side: number }
+```
+
+### 5. Advanced Composition & Branding
+```ts
+const Base = z.object({ id: z.string().uuid(), createdAt: z.coerce.date() });
+
+const Admin = Base.extend({ role: z.literal("admin"), permissions: z.array(z.string()) });
+const Customer = Base.extend({ role: z.literal("customer"), plan: z.enum(["free", "pro"]) });
+
+const Password = z.string()
+  .min(8, "At least 8 chars")
+  .regex(/[A-Z]/, "Needs uppercase")
+  .regex(/[0-9]/, "Needs number")
+  .brand<"Password">();
+
+type Password = z.infer<typeof Password>;
+```
+
+### 6. React Hook Form (2025)
+```tsx
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const { register, handleSubmit } = useForm<User>({
+  resolver: zodResolver(UserSchema),
+});
+```
+
+## Also Read
+- [Deploying MERN Apps with Docker in 2025](https://ome9a.com/blogs/deploying-mern-apps-with-docker-in-2025-68d4ef5b6dfbca526c4c1e11)
+- [Building Serverless APIs with Bun and Cloudflare Workers in 2025](https://ome9a.com/blogs/building-serverless-apis-with-bun-and-cloudflare-workers-in-2025-68da2db5adf091adfe14d867)
+
+### 7. Next.js Server Actions (App Router)
+```ts
+"use server";
+
+import { UserSchema } from "@/lib/schemas";
+
+export async function createUser(formData: FormData) {
+  const parsed = UserSchema.safeParse(Object.fromEntries(formData));
+
+  if (!parsed.success) return { error: parsed.error.format() };
+
+  await db.user.create({ data: parsed.data });
+  revalidatePath("/users");
+}
+```
+
+### 8. tRPC + Zod = End-to-End Typesafety
+```ts
+create: t.procedure
+  .input(UserSchema)
+  .mutation(({ input }) => db.user.create({ data: input })),
+```
+
+### 9. Zod on the Edge (Bun / Cloudflare Workers)
+```ts
+export default {
+  async fetch(request: Request) {
+    const json = await request.json();
+    const parsed = UserSchema.safeParse(json);
+    if (!parsed.success) return new Response("Invalid", { status: 400 });
+    // parsed.data is fully typed on the edge!
+  },
+};
+```
+
+### 10. Production-Grade Schema (2025)
+```ts
+const CreatePostSchema = z.object({
+  title: z.string().min(5).max(100),
+  content: z.string().min(50),
+  tags: z.array(z.string().max(20)).max(10).default([]),
+  published: z.coerce.boolean().default(false),
+}).refine(
+  (data) => !(data.published && data.content.length < 200),
+  { message: "Published posts need ≥200 chars", path: ["content"] }
+);
+```
+
+## Best Practices 2025
+
+- Always `safeParse` in production
+- Centralize schemas in `lib/schemas`
+- Reuse the same schema on frontend, backend, and edge
+- Use `coerce` for forms, `brand` for domain primitives
+- Leverage `discriminatedUnion` instead of manual type guards
+
+
+## Conclusion
+Zod in 2025 is more than validation — it’s the foundation of bulletproof, end-to-end type-safe applications.
